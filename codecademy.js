@@ -18,20 +18,24 @@ const reversedArray = (arr) => {
 // greet aliens
 const greetAliens = (arr) => {
   for(let i = 0; i < arr.length; i++){
-    console.log(`Oh powerful ${arr[i]}, we humans offer our unconditional surrender!`)
+    console.log(`Oh powerful ${arr[i]}, we humans offer our unconditional surrender!`);
   }
-}
+};
 
+// converting everything to baby
 const convertToBaby = (arr) => {
   arr.forEach((element, i) => {
     arr[i] = `baby ${arr[i]}`;
   });
   return arr;
-}
+};
 
+
+//fixing the code
+//changed variable name to j within the for loop so we wont be changing the index the loop is using
 const numbers = [5, 3, 9, 30];
 
-const smallestPowerOfTwo = arr => {
+const smallestPowerOfTwos = arr => {
       let results = [];
       // The 'outer' for loop - loops through each element in the array
       for (let i = 0; i < arr.length; i++) {
@@ -44,8 +48,7 @@ const smallestPowerOfTwo = arr => {
             }
             results.push(j);
       }
-      return results
-}
+      return results;
+};
 
-console.log(smallestPowerOfTwo(numbers))
-// Should print the returned array [ 8, 4, 16, 32 ] instead prints the returned array [8]
+console.log(smallestPowerOfTwo(numbers));
