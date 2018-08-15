@@ -30,7 +30,6 @@ const convertToBaby = (arr) => {
   return arr;
 };
 
-
 //fixing the code
 //changed variable name to j within the for loop so we wont be changing the index the loop is using
 const numbers = [5, 3, 9, 30];
@@ -52,3 +51,23 @@ const smallestPowerOfTwos = arr => {
 };
 
 console.log(smallestPowerOfTwo(numbers));
+
+
+// decline and accept everything
+// PART I
+const politelyDecline = (veg) => {
+      console.log('No ' + veg + ' please. I will have pizza with extra cheese.');
+};
+
+const declineEverything = (arr) => {
+  arr.forEach(element => {
+    politelyDecline(element);
+  });
+};
+
+// Part II
+const acceptEverything = (arr) => {
+  arr.forEach(element => {
+    console.log(`Ok, I guess I will eat some ${element}.`);
+  });
+};
