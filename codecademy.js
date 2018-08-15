@@ -71,3 +71,8 @@ const acceptEverything = (arr) => {
     console.log(`Ok, I guess I will eat some ${element}.`);
   });
 };
+
+//square numbers
+const squareNums = (arr) => arr.map(num => num * num);
+
+const shoutGreetings = (arr) => arr.map(str => `${str.toUpperCase()}!`);
