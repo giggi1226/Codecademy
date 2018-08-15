@@ -72,7 +72,24 @@ const acceptEverything = (arr) => {
   });
 };
 
-//square numbers
+// square numbers
 const squareNums = (arr) => arr.map(num => num * num);
 
+// shouting greetings
 const shoutGreetings = (arr) => arr.map(str => `${str.toUpperCase()}!`);
+
+// sorting an array of years
+const sortYears = (yearsArr) => yearsArr.sort();
+
+// returns array with the items that are present in both
+const justCoolStuff = (cool1, cool2) => cool1.filter((coolWord) => cool2.includes(coolWord));
+
+// looks to see if each food item is sourced by plant
+const isTheDinnerVegan = (foodArr) => foodArr.every((element) => element.source === 'plant');
+
+// dogFactory
+const dogFactory = (name, breed, weight) => ({
+  name,
+  breed,
+  weight
+});
